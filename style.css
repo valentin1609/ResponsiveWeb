@@ -1,0 +1,230 @@
+body {
+    background-color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+}
+
+header {
+    background-image: url(header2.jpg);
+    height: 30px;
+    width: 100%;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+
+
+.divimagenes {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 210px;
+    margin: 3px;
+    padding: 5px;
+    background-color: transparent;
+    justify-content: space-around;
+    /*mismo espacio entre contenido. Tambien se puede usar (justify-content: center;) */
+}
+
+.img- {
+    height: 100%;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.p2 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around; 
+}
+
+.derecha{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.iderecha {
+    max-width: 180px;
+    max-height: 250px;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(31, 31, 31);
+
+}
+
+
+
+.derecha h2{
+    background-color: red;
+    width: 100%;
+    text-align: center;
+}
+
+
+article {
+    color: black;
+    background-color: white;
+    height: 100%;
+    max-width: 500px;
+    padding: 5px;
+    width: 80%;
+}
+
+article p {
+    text-align: justify;
+    overflow: auto;
+    padding: 5px;
+}
+
+.imgarticle {
+    float: left;
+    width: 40%;
+}
+
+
+
+hr {
+    clear: both;
+    padding: 1px;
+}
+
+footer {
+    clear: both;
+}
+
+
+.divcuadros {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.cuadros {
+    float: left;
+    background-color: black;
+    overflow: auto;
+    height: 100%;
+    width: 20%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+
+
+p img {
+    width: 100%;
+}
+
+
+h1 {
+    background-color: red;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.clasif{
+    background-color: rgb(1, 80, 1);
+}
+
+table {
+    text-align: center;
+    background-color: black;
+    max-width: 196px;
+    margin-top: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.divtabla {
+
+    justify-content: flex-end;
+    float: right;
+    padding: 10px;
+    height: 100%;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    float: left;
+    width: 70%;
+}
+
+
+
+
+@media screen and (min-width: 555px) {
+    .divimagenes {
+        flex-direction: column;
+    }
+}
+
+@media  screen and (max-width:555px) {
+    .img- {
+        padding-top: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 770px) {
+    .divimagenes {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1299px) {
+    .derecha {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .iderecha {
+        height: 100%;
+        width: 100%;
+        min-width: 0px;
+    }
+}
+
+@media  screen and (max-width: 665px){
+    .divtabla{
+        float: none;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+    }
+    
+    .pp2{
+        width: 100%;
+    justify-content: center;
+    }
+
+    main {
+        width: 100%;
+    }
+}
